@@ -14,6 +14,7 @@ class InputPassword extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 25.0),
         child: TextField(
           decoration: InputDecoration(
+            contentPadding: EdgeInsets.all(20),
             hintText: "Password",
             hintStyle: TextStyle(
               color: Color(0xffA1A4B2),

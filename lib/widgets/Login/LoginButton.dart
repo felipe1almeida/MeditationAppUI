@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-
+import 'package:breathe/pages/welcome.dart';
 class LoginButton extends StatelessWidget {
   const LoginButton({
     Key key,
@@ -17,7 +17,13 @@ class LoginButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(38.0),
         ),
         color: Color(0xff8E97FD),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => Welcome(),
+              ),
+            );
+        },
         child: Text(
           "LOG IN",
           style: TextStyle(color: Colors.white),

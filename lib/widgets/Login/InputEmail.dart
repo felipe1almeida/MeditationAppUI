@@ -13,6 +13,7 @@ class InputEmail extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 15.0),
         child: TextField(
           decoration: InputDecoration(
+            contentPadding: EdgeInsets.all(20),
             hintText: "Email address",
             hintStyle: TextStyle(
               color: Color(0xffA1A4B2),
